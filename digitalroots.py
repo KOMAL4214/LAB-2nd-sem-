@@ -6,6 +6,7 @@ def digitalroot(n) :
         if(sum>9 and n==0) :
             n=sum
             sum=0
+            digitalroot(n)
         elif(n==0) :
             return sum
 n=int(input("enter the number :"))
