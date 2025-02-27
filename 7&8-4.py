@@ -13,8 +13,8 @@ class Employee:
     
     def __str__(self):
         return f"employee name:{self.name}, employee salary:{self.salary}"
-emp1=Employee("pavan",1000000)
-emp2=Employee("alice",200000)
+emp1=Employee("komal",1000000)
+emp2=Employee("sai",200000)
 
 print(emp1+emp2)
 print(emp1-emp2)
