@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            SVNIT
+        </title>
+        <style>
+            .leftlogo{
+                position: absolute;
+                left: 0%;
+                width: 110px;
+                display: inline-block;
+            }
+            .name{
+                position: absolute;
+                left: 30%;
+                width: 700px;
+                display: inline-block;
+            }
+            .rightlogo{
+                position: absolute;
+                left: 90%;
+                width: 100px;
+                display: inline-block;
+            }
+            .first{
+                align-items: baseline;
+            }
+            .second{
+                left: 0%;
+                top: 15%;
+                position: absolute;
+                width: 100%;
+                height: 110px;
+                background-color: rgba(69, 98, 192, 0.932);
+                display: inline-block;
+            }
+            .st{
+                top:50px;
+                left: 2%;
+                position: absolute;
+                color: white;
+                cursor: pointer;
+                display: inline-block;
+            }
+            .ad{
+                top:50px;
+                left: 10%;
+                position: absolute;
+                color: white;
+                cursor: pointer;
+                display: inline-block;
+            }
+            .aca{
+                top:50px;
+                left: 21.5%;
+                position: absolute;
+                color: white;
+                cursor: pointer;
+                display: inline-block;
+            }
+            .dep{
+                top:50px;
+                left: 30%;
+                position: absolute;
+                color: white;
+                cursor: pointer;
+                display: inline-block;
+            }
+            .stu{
+                top:50px;
+                left: 40%;
+                position: absolute;
+                color: white;
+                cursor: pointer;
+                display: inline-block;
+            }
+            .re{
+                top:50px;
+                left: 48%;
+                position: absolute;
+                color: white;
+                cursor: pointer;
+                display: inline-block;
+            }
+            .care{
+                top:50px;
+                left: 62%;
+                position: absolute;
+                color: white;
+                cursor: pointer;
+                display: inline-block;
+            }
+            .cent{
+                top:50px;
+                left: 76%;
+                position: absolute;
+                color: white;
+                cursor: pointer;
+                display: inline-block;
+            }
+            .cont{
+                top:50px;
+                left: 87%;
+                position: absolute;
+                color: white;
+                cursor: pointer;
+                display: inline-block;
+            }
+            .env{
+                top:47px;
+                left: 95%;
+                position: absolute;
+                color: white;
+                cursor: pointer;
+                display: inline-block;
+            }
+            .b1{
+                left: 1%;
+                background-color: rgb(39, 223, 255);
+                margin-top: 32%;
+                top: -33%;
+                position: absolute;
+                border-color: white;
+                border-width: 0cap;
+                width: 400px;
+                height: 50px;
+                font-size: 22px;
+                padding-left:0%;
+                padding-right: 130px;
+                font-weight: bold;
+                font-family: sans-serif;
+                display: inline-block;
+            }
+            .b1:hover{
+                color: red;
+                cursor: pointer;
+            }
+            .b2{
+                left: 1%;
+                background-color: rgb(39, 223, 255);
+                top: -27%;
+                margin-top: 32%;
+                position: absolute;
+                border-color: white;
+                border-width: 0cap;
+                width: 400px;
+                height: 50px;
+                font-size: 22px;
+                padding-left:0%;
+                padding-right: 10px;
+                font-weight: bold;
+                font-family: sans-serif;
+                display: inline-block;
+            }
+            .b2:hover{
+                color: red;
+                cursor: pointer;
+            }
+            .b3{
+                background-color: rgb(39, 223, 255);
+                margin-top: 32%;
+                left: 1%;
+                top: -21%;
+                position: absolute;
+                border-color: white;
+                border-width: 0cap;
+                width: 400px;
+                height: 50px;
+                font-size: 22px;
+                padding-left:0%;
+                padding-right: 51px;
+                font-weight: bold;
+                font-family: sans-serif;
+                display: inline-block;
+            }
+            .b3:hover{
+                color: red;
+                cursor: pointer;
+            }
+            .b4{
+                background-color: rgb(39, 223, 255);
+                margin-top: 32%;
+                position: absolute;
+                top: -14.7%;
+                left: 1%;
+                border-color: white;
+                border-width: 0cap;
+                width: 400px;
+                height: 50px;
+                font-size: 22px;
+                padding-left:0%;
+                padding-right: 190px;
+                font-weight: bold;
+                display: inline-block;
+                font-family: sans-serif;
+            }
+            .b4:hover{
+                color: red;
+                cursor: pointer;
+            }
+            .b5{
+                background-color: rgb(39, 223, 255);
+                margin-top: 32%;
+                left: 1%;
+                top: -8.8%;
+                position: absolute;
+                border-color: white;
+                border-width: 0cap;
+                width: 400px;
+                height: 50px;
+                font-size: 22px;
+                padding-left:0%;
+                padding-right: 182px;
+                font-weight: bold;
+                display: inline-block;
+                font-family: sans-serif;
+            }
+            .b5:hover{
+                color: red;
+                cursor: pointer;
+            }
+            .b6{
+                background-color: rgb(39, 223, 255);
+                margin-top: 32%;
+                left: 1%;
+                top: -3%;
+                position: absolute;
+                border-color: white;
+                border-width: 0cap;
+                width: 400px;
+                height: 50px;
+                font-size: 22px;
+                padding-left:0%;
+                padding-right: 253px;
+                display: inline-block;
+                font-weight: bold;
+                font-family: sans-serif;
+            }
+            .b6:hover{
+                color: red;
+                cursor: pointer;
+            }
+            .b7{
+                background-color: rgb(39, 223, 255);
+                margin-top: 32%;
+                top: 3%;
+                position: absolute;
+                border-color: white;
+                left: 1%;
+                border-width: 0cap;
+                width: 400px;
+                height: 50px;
+                font-size: 22px;
+                padding-left:0%;
+                padding-right: 282px;
+                font-weight: bold;
+                display: inline-block;
+                font-family: sans-serif;
+            }
+            .b7:hover{
+                color: red;
+                cursor: pointer;
+            }
+            .b8{
+                background-color: rgb(39, 223, 255);
+                margin-top: 32%;
+                top: 9%;
+                position: absolute;
+                border-color: white;
+                left: 1%;
+                border-width: 0cap;
+                width: 400px;
+                height: 50px;
+                font-size: 22px;
+                padding-left:0%;
+                padding-right: 263px;
+                font-weight: bold;
+                font-family: sans-serif;
+                display: inline-block;
+            }
+            .b8:hover{
+                color: red;
+                cursor: pointer;
+            }
+            .b9{
+                background-color: rgb(39, 223, 255);
+                margin-top: 32.5%;
+                top: 14%;
+                position: absolute;
+                border-color: white;
+                border-width: 0cap;
+                width: 400px;
+                height: 50px;
+                font-size: 22px;
+                padding-left:0%;
+                left: 1%;
+                display: inline-block;
+                padding-right: 146px;
+                font-weight: bold;
+                font-family: sans-serif;
+            }
+            .b9:hover{
+                color: red;
+                cursor: pointer;
+            }
+            .b10{
+                background-color: rgb(39, 223, 255);
+                top: 21%;
+                margin-top: 32%;
+                position: absolute;
+                border-color: white;
+                border-width: 0cap;
+                width: 400px;
+                height: 50px;
+                font-size: 22px;
+                display: inline-block;
+                padding-left:0%;
+                left: 1%;
+                padding-right: 293px;
+                font-weight: bold;
+                font-family: sans-serif;
+            }
+            .b10:hover{
+                color: red;
+                cursor: pointer;
+            }
+            .b11{
+                background-color: rgb(39, 223, 255);
+                top: 27%;
+                margin-top: 32%;
+                position: absolute;
+                border-color: white;
+                border-width: 0cap;
+                width: 400px;
+                height: 50px;
+                font-size: 22px;
+                left: 1%;
+                padding-left:0%;
+                padding-right: 148px;
+                font-weight: bold;
+                display: inline-block;
+                font-family: sans-serif;
+            }
+            .b11:hover{
+                color: red;
+                cursor: pointer;
+            }
+            .mid{
+                position: absolute;
+                top: 29%;
+                left: 23%;
+                width: 52%;
+                display: inline-block;
+                height: 57%;
+            }
+            .c1{
+                left: 76%;
+                background-color: rgb(39, 223, 255);
+                margin-top: 32%;
+                top: -33%;
+                position: absolute;
+                border-color: white;
+                border-width: 0cap;
+                width: 400px;
+                display: inline-block;
+                height: 50px;
+                font-size: 22px;
+                padding-left:0%;
+                padding-right: 210px;
+                font-weight: bold;
+                font-family: sans-serif;
+            }
+            .c1:hover{
+                color: red;
+                cursor: pointer;
+            }
+            .c2{
+                left: 76%;
+                background-color: rgb(39, 223, 255);
+                top: -27%;
+                margin-top: 32%;
+                position: absolute;
+                display: inline-block;
+                border-color: white;
+                border-width: 0cap;
+                width: 400px;
+                height: 50px;
+                font-size: 22px;
+                padding-left:0%;
+                padding-right: 88px;
+                font-weight: bold;
+                font-family: sans-serif;
+            }
+            .c2:hover{
+                color: red;
+                cursor: pointer;
+            }
+            .c3{
+                background-color: rgb(39, 223, 255);
+                margin-top: 32%;
+                left: 76%;
+                top: -21%;
+                position: absolute;
+                border-color: white;
+                border-width: 0cap;
+                width: 400px;
+                display: inline-block;
+                height: 50px;
+                font-size: 22px;
+                padding-left:0%;
+                padding-right: 125px;
+                font-weight: bold;
+                font-family: sans-serif;
+            }
+            .c3:hover{
+                color: red;
+                cursor: pointer;
+            }
+            .c4{
+                background-color: rgb(39, 223, 255);
+                margin-top: 32%;
+                position: absolute;
+                top: -14.7%;
+                left: 76%;
+                border-color: white;
+                border-width: 0cap;
+                width: 400px;
+                height: 50px;
+                font-size: 22px;
+                padding-left:0%;
+                padding-right: 237px;
+                display: inline-block;
+                font-weight: bold;
+                font-family: sans-serif;
+            }
+            .c4:hover{
+                color: red;
+                cursor: pointer;
+            }
+            .c5{
+                background-color: rgb(39, 223, 255);
+                margin-top: 32%;
+                left: 76%;
+                top: -8.8%;
+                position: absolute;
+                border-color: white;
+                border-width: 0cap;
+                width: 400px;
+                display: inline-block;
+                height: 50px;
+                font-size: 22px;
+                padding-left:0%;
+                padding-right: 225px;
+                font-weight: bold;
+                font-family: sans-serif;
+            }
+            .c5:hover{
+                color: red;
+                cursor: pointer;
+            }
+            .c6{
+                background-color: rgb(39, 223, 255);
+                margin-top: 32%;
+                left: 76%;
+                top: -3%;
+                position: absolute;
+                border-color: white;
+                border-width: 0cap;
+                width: 400px;
+                height: 50px;
+                font-size: 22px;
+                display: inline-block;
+                padding-left:0%;
+                padding-right: 208px;
+                font-weight: bold;
+                font-family: sans-serif;
+            }
+            .c6:hover{
+                color: red;
+                cursor: pointer;
+            }
+            .c7{
+                background-color: rgb(39, 223, 255);
+                margin-top: 32%;
+                top: 3%;
+                position: absolute;
+                border-color: white;
+                left: 76%;
+                border-width: 0cap;
+                width: 400px;
+                height: 50px;
+                font-size: 22px;
+                display: inline-block;
+                padding-left:0%;
+                padding-right: 140px;
+                font-weight: bold;
+                font-family: sans-serif;
+            }
+            .c7:hover{
+                color: red;
+                cursor: pointer;
+            }
+            .c8{
+                background-color: rgb(39, 223, 255);
+                margin-top: 32%;
+                top: 9%;
+                position: absolute;
+                border-color: white;
+                left: 76%;
+                border-width: 0cap;
+                width: 400px;
+                height: 50px;
+                font-size: 22px;
+                padding-left:0%;
+                display: inline-block;
+                padding-right: 190px;
+                font-weight: bold;
+                font-family: sans-serif;
+            }
+            .c8:hover{
+                color: red;
+                cursor: pointer;
+            }
+            .c9{
+                background-color: rgb(39, 223, 255);
+                margin-top: 32.5%;
+                top: 14%;
+                position: absolute;
+                border-color: white;
+                border-width: 0cap;
+                width: 400px;
+                height: 50px;
+                font-size: 22px;
+                padding-left:0%;
+                left: 76%;
+                padding-right: 273px;
+                font-weight: bold;
+                font-family: sans-serif;
+                display: inline-block;
+            }
+            .c9:hover{
+                color: red;
+                cursor: pointer;
+            }
+            .c10{
+                background-color: rgb(39, 223, 255);
+                top: 21%;
+                margin-top: 32%;
+                position: absolute;
+                border-color: white;
+                border-width: 0cap;
+                width: 400px;
+                height: 50px;
+                font-size: 22px;
+                padding-left:0%;
+                left: 76%;
+                display: inline-block;
+                padding-right: 193px;
+                font-weight: bold;
+                font-family: sans-serif;
+            }
+            .c10:hover{
+                color: red;
+                cursor: pointer;
+            }
+            .c11{
+                background-color: rgb(39, 223, 255);
+                top: 27%;
+                margin-top: 32%;
+                position: absolute;
+                border-color: white;
+                border-width: 0cap;
+                width: 400px;
+                height: 50px;
+                font-size: 22px;
+                left: 76%;
+                padding-left:0%;
+                padding-right: 184px;
+                font-weight: bold;
+                display: inline-block;
+                font-family: sans-serif;
+            }
+            .c11:hover{
+                color: red;
+                cursor: pointer;
+            }
+            .c12{
+                background-color: rgb(39, 223, 255);
+                top: 33%;
+                margin-top: 32%;
+                position: absolute;
+                border-color: white;
+                border-width: 0cap;
+                width: 400px;
+                height: 50px;
+                font-size: 22px;
+                left: 76%;
+                display: inline-block;
+                padding-left:0%;
+                padding-right: 288px;
+                font-weight: bold;
+                font-family: sans-serif;
+            }
+            .c12:hover{
+                color: red;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="first">
+            <img class="leftlogo" src="C:\Users\hp\Desktop\KOMALZZ\logo.jpg">
+            <img class="name" src="https://www.svnit.ac.in/images/namehind.png">
+            <img src="https://www.svnit.ac.in/images/sardar_vallabhbhai_patel.png" class="rightlogo">
+        </div>
+        <div class="second">
+            <a class="st">ABOUT US &#9660</a>
+            <a class="ad">ADMINISTRATION &#9660</a>
+            <a class="aca">ACADAMIC &#9660</a>
+            <a class="dep">DEPARTMENTS &#9660</a>
+            <a class="stu">STUDENT LIFE</a>
+            <a class="re">RESEARCH & CONSULTANCY</a>
+            <a class="care">CAREER DEVELOPMENT CELL</a>
+            <a class="cent">CENTRAL FACILITY &#9660</a>
+            <a class="cont">CONTACT US &#9660</a>
+            <a class="env">&#9993</a>
+        </div>
+        <div>
+            <button class="b1">Minutes of Meetings</button>
+            <button class="b2">Memorandum of Understanding</button>
+            <button class="b3">Ek Bharat Shreshtha Bharat</button>
+            <button class="b4">Achievements</button>
+            <button class="b5">Central Library</button>
+            <button class="b6">Alumini</button>
+            <button class="b7">NIRF</button>
+            <button class="b8">Career</button>
+            <button class="b9">Vigilance Section</button>
+            <button class="b10">RTI</button>
+            <button class="b11">Employee Career</button>
+        </div>
+        <div>
+            <img src="https://www.svnit.ac.in/images/convocation24-1/3a.jpg" class="mid">
+        </div>
+        <div>
+            <button class="c1">Samarth-eGov</button>
+            <button class="c2">Chapters | Clubs | Society</button>
+            <button class="c3">Magazine | Newsletter</button>
+            <button class="c4">Admission</button>
+            <button class="c5">Scholarship</button>
+            <button class="c6">Fee Structure</button>
+            <button class="c7">Academic Calender</button>
+            <button class="c8">JoSAA | CCMT</button>
+            <button class="c9">Hostel</button>
+            <button class="c10">Fees Payment</button>
+            <button class="c11">NCC|NSS|Yoga</button>
+            <button class="c12">Cells</button>
+        </div>
+    </body>
+</html>
